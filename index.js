@@ -3,7 +3,7 @@
 var randomNumber1 = Math.random() * 6;    // creating a random number of range 6
 randomNumber1 = Math.floor(randomNumber1) + 1; //rounding up with floor func
 var randomDiceImage = "dice" + randomNumber1 + ".png"; //concatenating the name of image
-var randomSourceImage = "images/" + randomDiceImage;
+var randomSourceImage = randomDiceImage;
 var image1 = document.querySelectorAll("img")[0];  //selecting the image using js
 image1.setAttribute("src", randomSourceImage);
 
@@ -12,7 +12,7 @@ image1.setAttribute("src", randomSourceImage);
 var randomNumber2 = Math.random() * 6;
 randomNumber2 = Math.floor(randomNumber2) + 1;
 var randomDiceImage2 = "dice" + randomNumber2 + ".png";
-var randomSourceImage2 = "images/" + randomDiceImage2;
+var randomSourceImage2 =randomDiceImage2;
 var image2 = document.querySelectorAll("img")[1];
 image2.setAttribute("src", randomSourceImage2);
 
